@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./deatils.css">
+</head>
+<body>
+    <div class="page-transition" id="pageTransition"></div>
+    <div class="container">
+        <button class="close-btn" id="closeBtn">✕</button>
+    
+        <div class="logo-section">
+          <h2>Welcome back to</h2>
+          <h1 class="logo">ROYAL PERKS</h1>
+          <button class="login-btn">Login</button>
+          <p class="find-restaurant">📍 Find a Restaurant</p>
+        </div>
+    
+        <div class="menu-section">
+          <div class="menu-group">
+            <h3>Support</h3>
+            <ul>
+              <li>Contact Us <img src="./image/icons8-circled-right-48.png" alt=""></li>
+              <li>FAQ  <img src="./image/icons8-circled-right-48.png" alt=""></li>
+              <li>Restaurant Survey  <img src="./image/icons8-circled-right-48.png" alt=""></li>
+            </ul>
+          </div>
+    
+          <div class="menu-group">
+            <h3>Gift Cards</h3>
+            <ul>
+              <li>Gift Cards  <img src="./image/icons8-circled-right-48.png" alt=""></li>
+            </ul>
+          </div>
+    
+          <div class="menu-group">
+            <h3>Royal Perks</h3>
+            <ul>
+              <li>Royal Perks  <img src="./image/icons8-circled-right-48.png" alt=""></li>
+              <li>Royal Perks Terms of Service  <img src="./image/icons8-circled-right-48.png" alt=""></li>
+            </ul>
+          </div>
+    
+          <div class="menu-group">
+            <h3>About Burger King</h3>
+            <ul>
+              <li>About BK  <img src="./image/icons8-circled-right-48.png" alt=""></li>
+              <li>Careers  <img src="./image/icons8-circled-right-48.png" alt=""></li>
+              <li>Franchising  <img src="./image/icons8-circled-right-48.png" alt=""></li>
+              <li>Burger King Foundation  <img src="./image/icons8-circled-right-48.png" alt=""></li>
+              <li>Nutrition  <img src="./image/icons8-circled-right-48.png" alt=""></li>
+              <li>Allergen Information  <img src="./image/icons8-circled-right-48.png" alt=""></li>
+              <li>Offer Terms  <img src="./image/icons8-circled-right-48.png" alt=""></li>
+              <li>Delivery Terms  <img src="./image/icons8-circled-right-48.png" alt="">    </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const closeBtn = document.getElementById('closeBtn');
+          const transition = document.getElementById('pageTransition');
+      
+          closeBtn.addEventListener('click', function () {
+            transition.classList.add('active');
+            setTimeout(() => {
+              window.location.href = './index.html';
+            }, 600); // Match the fade duration
+          });
+        });
+      </script>
+</body>
+</html>
